@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@android:style/Animation"
+    android:id="@+id/linearLayoutHorizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:background="#9C27B0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewTop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Court Counter"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutHorizontalSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutFirstVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/ButtonViewTeamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team A"
+                android:textSize="35sp"/>
+
+            <TextView
+                android:id="@+id/textViewTeamATotalScore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="50sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/TeamA1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1 Point"
+                android:onClick="TeamAPointsClickEvent"/>
+
+            <Button
+                android:id="@+id/TeamA2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+2 Points"
+                android:onClick="TeamAPointsClickEvent"/>
+
+            <Button
+                android:id="@+id/TeamA3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+3 Points"
+                android:onClick="TeamAPointsClickEvent"/>
+
+            <Button
+                android:id="@+id/TeamA4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+4 Points"
+                android:onClick="TeamAPointsClickEvent"/>
+            <Button
+                android:id="@+id/TeamA5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+5 Points"
+                android:onClick="TeamAPointsClickEvent"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#dcdcdc"
+            android:orientation="horizontal">
+
+        </View>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutSecondVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/ButtonViewTeamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/textViewTeamBTotalScore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:onClick="TeamBPointsClickEvent"/>
+
+            <Button
+                android:id="@+id/TeamB1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1 Point"
+                android:onClick="TeamBPointsClickEvent"/>
+
+            <Button
+                android:id="@+id/TeamB2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+2 Points"
+                android:onClick="TeamBPointsClickEvent"/>
+
+            <Button
+                android:id="@+id/TeamB3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+3 Points"
+                android:onClick="TeamBPointsClickEvent"/>
+
+            <Button
+                android:id="@+id/TeamB4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+4 Points"
+                android:onClick="TeamBPointsClickEvent"/>
+
+            <Button
+                android:id="@+id/TeamB5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+5 Points"
+                android:onClick="TeamBPointsClickEvent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ButtonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Reset "
+            android:textSize="30sp"
+            android:onClick="ResetScores"/>
+    </LinearLayout>
+
+</LinearLayout>
+

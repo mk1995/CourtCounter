@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BasketBall Court Counter</string>
+    <string name="title_activity_relative_layout">CourtCounter - Relative Layout Activity</string>
+</resources>
